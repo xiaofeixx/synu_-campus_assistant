@@ -1,0 +1,19 @@
+<view class='container'>
+<view class='header'>
+<text>沈师校园助手</text>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='section'>
+    <text>学号：</text>
+    <input type='number' name='no' value='' placeholder='请输入学号' />
+  </view>
+  <view class='section'>
+    <text>密码：</text>
+    <input password='true' name='pwd' value='' placeholder="请输入密码"/>
+  </view>
+  <view class='section'>
+  <button type='primary' form-type='submit'>登录</button>
+  </view>
+</form>
+  
+</view>

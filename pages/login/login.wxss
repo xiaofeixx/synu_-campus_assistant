@@ -1,0 +1,14 @@
+.header{
+  font-weight: bold;
+}
+form{
+  width: 100%;
+  /* border: solid 1px #0f0;  */
+}
+.section{
+  margin: 50rpx auto;
+}
+input{
+  height: 100rpx;
+  border: solid 1px #ccc;
+}

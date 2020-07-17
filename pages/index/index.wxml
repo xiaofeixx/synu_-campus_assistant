@@ -1,0 +1,31 @@
+<view class="bannar">
+
+<swiper indicator-dots 
+autoplay
+interval="3000"
+indicator-color="rgba(255,255,255,0.5)"
+indicator-active-color="#fff"
+circular>
+  <swiper-item>
+    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594802032353&di=325861b683c421706b3cfaa093a2b360&imgtype=0&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D594156914%2C536181971%26fm%3D214%26gp%3D0.jpg"></image>
+  </swiper-item>
+</swiper>
+</view>
+
+<view class="major">
+  <view class="majorCon">
+    <navigator class="box" url="/pages/grade/grade">
+      <image class="pic" src="/images/grade.png"></image>
+      <view class="txt">成绩</view>
+    </navigator>
+
+    <navigator class="box" url="/pages/SubjectTable/SubjectTable">
+      <image class="pic" src="/images/class-time.png"></image>
+      <view class="txt">课程表</view>
+    </navigator>
+    <navigator class="box">
+      <image class="pic" src="/images/comment-teach.png"></image>
+      <view class="txt">评教</view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class='help'>
+  <view class='help_item'>
+    <view class='title' data-index='1' catchtap='panel'>
+      <view class='title_1'>中国特色社会主义毛概思想理论真实的大撒大撒撒打算</view>
+      <view class='title_2'><image src="../../images/{{showIndex == 1 ? 'up':'down'}}.png"></image></view>
+      <view class="grade_score">40</view>
+    </view>
+    <view class='detail' wx:if="{{showIndex == 1}}">
+    <view  class='detail_item'>学分:1</view>
+    <view  class='detail_item'>绩点:2</view>
+    <view  class='detail_item'>平时:354</view>
+    <view  class='detail_item'>实验:12</view>
+    <view  class='detail_item'>期中:60</view>
+    <view  class='detail_item'>期末:321</view>
+    </view>
+  </view>
+
+  </view>

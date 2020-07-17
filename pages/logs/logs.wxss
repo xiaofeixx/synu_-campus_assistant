@@ -1,0 +1,64 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+/*  */
+.help {
+  width: 720rpx;
+  margin: 0 auto;
+}
+.help .help_item {
+  margin: 10rpx auto;
+}
+.help .help_item .title {
+  font-size: 35rpx;
+  font-weight: 700;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fafa;
+  display: flex;
+}
+.help .help_item .title .title_1 {
+  width: 600rpx;
+  padding-left: 20rpx;
+  overflow: hidden;
+}
+.help .help_item .title .title_2 {
+  width: 50rpx;
+  line-height: 130rpx;
+  text-align: center;
+}
+
+.help .help_item .title .grade_score{
+  width: 50rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx 20rpx;
+  background-color: #00ffff;
+  color: aliceblue;
+}
+
+.help .help_item .title .title_2 image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx auto;
+}
+.help .help_item .detail {
+  margin: 10rpx auto;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  text-indent: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.help .help_item .detail .detail_item{
+  width: 31%;
+}

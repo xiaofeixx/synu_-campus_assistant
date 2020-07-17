@@ -1,0 +1,100 @@
+/* pages/grade/grade.wxss */
+.major{
+  white-space: nowrap;
+}
+
+
+.swiper-tab {
+  border: 1rpx solid #EFF2FF;
+  background: white;
+}
+ 
+.swiper-tab-item {
+  display: inline-block;
+  height: 80rpx;
+  width: 150rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #504C4B;
+  font-size: 32rpx;
+  margin: 0 20rpx;
+}
+ 
+.active {
+  color: #F5A623;
+  width: 150rpx;
+   border-bottom: 1px solid #F5A623;
+   /* border-bottom-width: 30rpx; */
+   /* border-bottom-style:  groove; */
+}
+ 
+.swiper-box {
+  margin: 30rpx 0;
+  box-sizing: border-box;
+}
+ 
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+
+/* swiper结束 */
+
+/* 成绩列表开始 */
+.help {
+  width: 720rpx;
+  margin: 0 auto;
+}
+.help .help_item {
+  margin: 10rpx auto;
+}
+.help .help_item .title {
+  font-size: 35rpx;
+  font-weight: 700;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #ffff;
+  display: flex;
+}
+.help .help_item .title .title_1 {
+  width: 600rpx;
+  padding-left: 20rpx;
+  overflow: hidden;
+}
+.help .help_item .title .title_2 {
+  width: 50rpx;
+  line-height: 130rpx;
+  text-align: center;
+}
+
+.help .help_item .title .grade_score{
+  width: 50rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx 20rpx;
+  background-color: rgb(38, 189, 189);
+  color: rgb(19, 83, 221);
+  font-size: 20rpx;
+}
+
+.help .help_item .title .title_2 image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx auto;
+}
+.help .help_item .detail {
+  margin: 10rpx auto;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  text-indent: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.help .help_item .detail .detail_item{
+  width: 31%;
+}
+/* 成绩列表结束 */

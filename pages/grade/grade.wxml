@@ -1,0 +1,42 @@
+<!-- 顶部导航条 -->
+<scroll-view scroll-x class="major">
+<view class="swiper-tab">
+  <view wx:for="{{category}}" class="swiper-tab-item {{currentTab==index?'active':''}} langChange" data-current="{{index}}" bindtap="clickTab">{{result[index]}}</view>
+</view>
+</scroll-view>
+
+ <!-- 每个导航条内容 -->
+<swiper style="height: {{clientHeight?clientHeight+'px':'auto'}}" class='videoSwiper'  current="{{currentTab}}"  duration="200" bindchange="swiperTab">
+<!-- 已过期 -->
+<swiper-item wx:for="{{category}}" wx:for-item="catItem" wx:for-index="index" wx:key='key'>
+<scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="scrollbot">
+<view class="gradeContent">
+  <view class="gradeBox" wx:for="{{grades}}"  wx:for-index="idx">
+  <view wx:if="{{item.year==catItem.year && item.semester==catItem.semester}}">
+
+    <!-- 成绩列表 -->
+      <view class='help'>
+    <view class='help_item'>
+      <view class='title' data-index='{{idx+1}}' catchtap='panel'>
+        <view class='title_1'>{{item.cname}}</view>
+        <view class='title_2'><image src="../../images/{{showIndex == (idx+1) ? 'up':'down'}}.png"></image></view>
+        <view class="grade_score">{{item.grade}}</view>
+      </view>
+      <view class='detail' wx:if="{{showIndex == (idx+1)}}">
+      <view  class='detail_item'>学分：{{item.credit}}</view>
+      <view  class='detail_item'>绩点：{{item.point}}</view>
+      <view  class='detail_item'>平时：{{item.usually}}</view>
+      <view  class='detail_item'>实验：{{item.experiment}}</view>
+      <view  class='detail_item'>期中：{{item.mid}}</view>
+      <view  class='detail_item'>期末: {{item.final}}</view>
+      </view>
+    </view>
+    </view>
+
+  </view>
+  </view>
+</view>
+</scroll-view>
+</swiper-item >
+</swiper>
+
